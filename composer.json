@@ -1,0 +1,17 @@
+{
+  "name": "weswaldix/phpaustrianholidays",
+  "description": "PHP holiday detection for austrian holidays ",
+  "minimum-stability": "stable",
+  "license": "MIT License",
+  "authors": [
+    {
+      "name": "Andreas Weswaldi",
+      "email": "andreas@weswaldi.at"
+    }
+  ],
+  "autoload": {
+    "classmap" : [
+      "classes/AustrianHoliday.php"
+    ]
+  }
+}
