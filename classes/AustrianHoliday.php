@@ -1,12 +1,9 @@
 <?php
 
-
 namespace weswaldix\phpaustrianholidays;
-
 
 class AustrianHoliday{
     private static $__holidays = null;
-
 
     public static function isHoliday($date){
         if(self::$__holidays == null){
@@ -20,7 +17,6 @@ class AustrianHoliday{
             $parsedDate['year'], $parsedDate['month'], $parsedDate['day'], $parsedDate['hour'], $parsedDate['minute'], $parsedDate['second']);
         return in_array($new_date, self::$__holidays);
     }
-
 
     private static function load_holidays(){
         self::$__holidays = [
